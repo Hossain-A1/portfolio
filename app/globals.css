@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  @apply bg-bg_dark text-text_light
+
+}
+
+/* COMMON STYLES */
+.wrapper {
+  @apply container mx-auto px-5 md:px-0;
+}
+
+.section-padding {
+  @apply py-10 md:py-20;
+}
+
+/* typography */
+
+h1{
+  @apply text-6xl font-bold uppercase
+}
+p{
+  @apply text-text_light/40
+}
+
