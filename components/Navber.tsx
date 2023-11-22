@@ -1,9 +1,9 @@
 "use client";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { HiCode } from "react-icons/hi";
+import { buttonVariance } from "./Button";
 const Navber = () => {
-  const pathName = usePathname();
   return (
     <header className='fixed left-0 right-0 top-0 z-[999] bg-bg_dark '>
       <div className='flex justify-between items-center  h-20 wrapper'>
@@ -16,23 +16,16 @@ const Navber = () => {
           </h2>
         </div>
 
-        <ul className='flex gap-10 items-center shadow-xl shadow-blue-950 p-5 rounded-xl'>
+        <ul className='flex gap-10 items-center shadow-sm shadow-blue-900 p-5 rounded-xl'>
           <li>
-            <Link
-              href='/'
-              className={`${
-                pathName === "/" ? "text-text_light" : "text-text_light/40"
-              }`}
-            >
+            <Link href='/' className='text-text_light/40 '>
               Home
             </Link>
           </li>
           <li>
             <Link
-              href='/about'
-              className={`${
-                pathName === "/about" ? "text-text_light" : "text-text_light/40"
-              }`}
+              href='/#about'
+              className='text-text_light/40 '
             >
               About
             </Link>
@@ -40,9 +33,7 @@ const Navber = () => {
           <li>
             <Link
               href='/blog'
-              className={`${
-                pathName === "/blog" ? "text-text_light" : "text-text_light/40"
-              }`}
+              className='text-text_light/40'
             >
               Blog
             </Link>
@@ -50,11 +41,7 @@ const Navber = () => {
           <li>
             <Link
               href='/projects'
-              className={`${
-                pathName === "/projects"
-                  ? "text-text_light"
-                  : "text-text_light/40"
-              }`}
+              className='text-text_light/40 '
             >
               Projects
             </Link>
@@ -62,18 +49,15 @@ const Navber = () => {
           <li>
             <Link
               href='/contact-me'
-              className={`${
-                pathName === "/contact-me"
-                  ? "text-text_light"
-                  : "text-text_light/40"
-              }`}
+              className='text-text_light/40 '
             >
               Contact me
             </Link>
           </li>
         </ul>
 
-        <div>
+        <div className="flex items-center gap-5">
+          <Link href='' className={cn(buttonVariance({variant:"outline"}))}>Download Resume</Link>
           <span>✳️</span>
         </div>
       </div>

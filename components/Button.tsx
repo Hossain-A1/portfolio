@@ -2,14 +2,14 @@ import { cva, VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 export const buttonVariance= cva(
-  'inline-block text-center px-6 py-2 rounded-lg border font-medium active:scale-105 eq',
+  'inline-block text-center px-6 py-3 rounded-lg border font-medium active:scale-105 eq',
 
   {
     variants: {
       variant: {
         dark: 'border-dark bg-dark text-white hover:border-dark-700/90 hover:bg-dark-700/80 ',
         outline:
-          'border-dark bg-transparent text-dark hover:bg-dark hover:text-white',
+          'border-blue-900 bg-transparent text-text-light hover:bg-black/70 eq',
     
       },
       size: {
