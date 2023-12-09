@@ -3,12 +3,13 @@ import Link from "next/link";
 import { FaLinkedinIn, FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
 const Hero = () => {
   return (
-    <section className='wrapper mt-20 h-[calc(100vh-5rem)] grid grid-cols-2 gap-20  '>
-      <div className='flex flex-col justify-evenly  items-center'>
-        <div className=' flex flex-col w-full   lg:w-[30rem]  gap-2  '>
+   <main className="wrapper sp mt-20 h-auto">
+     <section className=' grid lg:grid-cols-2 grid-cols-1 gap-10  '>
+      <div className='flex flex-col  gap-5 items-center'>
+        <div className=' flex flex-col w-full  lg:w-[30rem]  gap-2  '>
           <h1 className=''>
             Hi, I'm <strong className='text-blue-500'>Hossain Ahmed</strong> a{" "}
-            <u>ReactJs</u> dev{" "}
+            <u className="text-blue">Full-Stack</u> dev{" "}
           </h1>
           <h3 className=''>
             Transforming coding fervor into purposeful creations.
@@ -26,34 +27,37 @@ const Hero = () => {
           <div className='flex gap-10 items-center '>
             <Link
               href='https://www.linkedin.com/feed/'
-              className=' shadow-sm shadow-blue-900 p-2 rounded-xl'
+              className=' shadow-sm shadow-blue p-2 rounded-xl'
             >
               <FaLinkedinIn className='text-2xl text-text_light' />
             </Link>
-            <Link href='' className=' shadow-sm shadow-blue-900 p-2 rounded-xl'>
+            <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
               <FaGithub className='text-2xl text-text_light' />
             </Link>
 
-            <Link href='' className=' shadow-sm shadow-blue-900 p-2 rounded-xl'>
+            <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
               <FaFacebookF className='text-2xl text-text_light' />
             </Link>
-            <Link href='' className=' shadow-sm shadow-blue-900 p-2 rounded-xl'>
+            <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
               <FaTwitter className='text-2xl text-text_light' />
             </Link>
           </div>
         </div>
       </div>
 
-      <div className='h-full w-full'>
-        <Image
-          src='/images/hero.jpeg'
-          alt='hero picture'
-          height={720}
-          width={1080}
-          className='h-full w-full '
-        />
+      <div className='  flex justify-center items-center '>
+        <div className='h-[20rem] w-[20rem]'>
+          <Image
+            src='/images/hero.jpeg'
+            alt='hero picture'
+            height={720}
+            width={1080}
+            className='h-full w-full '
+          />
+        </div>
       </div>
     </section>
+   </main>
   );
 };
 

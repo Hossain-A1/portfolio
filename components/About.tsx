@@ -1,22 +1,55 @@
+import SectionTitle from "./ui/SectionTitle";
+
 const AboutPage = () => {
   return (
-    <section id='about' className='wrapper section-padding'>
-      <div className='grid grid-cols-2'>
-        <div className='details flex flex-col gap-2'>
-          <u className='text-text_light/40 tracking-[0.3rem] underline-offset-4 uppercase font-medium'>
-            About
-          </u>
-          <h2>Unmasking My Journey and Essence</h2>
-
-          <p>
-            Hey there, I'm Hossain Ahmed—a passionate full-stack web developer
-            deeply engaged in the MERN stack. My proficiency spans Next.js,
-            React.js, TypeScript, Node.js, Express.js, and Tailwind CSS, as
-            evidenced by the diverse range of projects I've undertaken.
-          </p>
+    <section id='about' className=''>
+      <div className=' wrapper sp grid lg:grid-cols-2 grid-cols-1 gap-10'>
+        <div className='pic'>
+          <SectionTitle
+            heading='About'
+            subHeading='Unmasking My Journey and Essence'
+          />
         </div>
 
-        <div className='pic'></div>
+        <div className='ditails '>
+          <div className='space-y-5'>
+            <div>
+              <p>
+                Hey there, I'm Hossain Ahmed—a passionate full-stack web
+                developer deeply engaged in the MERN stack. My proficiency spans
+                Next.js, React.js, TypeScript, Node.js, Express.js, and Tailwind
+                CSS, as evidenced by the diverse range of projects I've
+                undertaken.
+              </p>
+            </div>
+
+            <div className='max-md:hidden'>
+              <p>
+                My venture into the realm of web development commenced in June
+                2022, marking the inception of an exciting and transformative
+                journey. From the outset, my passion for JavaScript has been a
+                driving force, compelling me to delve into its nuances with
+                unbridled enthusiasm. Eager to broaden my understanding and
+                proficiency, I consistently engage in immersive learning
+                experiences, exploring the multifaceted aspects of this
+                versatile programming language. This dynamic pursuit not only
+                fuels my knowledge but also propels me to stay abreast of the
+                ever-evolving landscape of web development.
+              </p>
+            </div>
+
+            <div>
+              <p>
+                In a nutshell, I'm a motivated web developer who's always
+                looking for chances to learn and come up with new solutions. I
+                have a solid background in MERN stack development, love working
+                with JavaScript, and am committed to delivering top-notch
+                results. I'm excited to use my skills in meaningful projects and
+                work with others who share my passion.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

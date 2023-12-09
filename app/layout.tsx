@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Bai_Jamjuree} from "next/font/google";
+import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 import Navber from "@/components/Navber";
 import { cn } from "@/lib/utils";
 
-const bai_jamjuree = Bai_Jamjuree({ subsets: ["latin"],weight:['200','300','400','500','600','700'] });
+const bai_jamjuree = Bai_Jamjuree({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Hossain Ahmed | Protfolio ",
@@ -18,11 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={cn(bai_jamjuree.className,'bg-bg_dark text-text_light')}>
-        <Navber/>
+      <body
+        className={cn(bai_jamjuree.className, "bg-bg_dark text-text_light")}
+      >
+        <Navber />
         {children}
-        
-        </body>
+      </body>
     </html>
   );
 }

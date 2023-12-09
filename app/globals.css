@@ -32,10 +32,12 @@ html {
   @apply container mx-auto px-5 md:px-0;
 }
 
-.section-padding {
-  @apply py-10 md:py-20;
+.sp {
+  @apply py-10 lg:py-20;
 }
-
+.tp{
+  @apply mt-10
+}
 /* typography */
 .eq {
   transition: 500ms cubic-bezier(0.25, 1, 0.5, 1);
@@ -51,5 +53,5 @@ h3 {
 }
 
 p {
-  @apply text-text_light/40;
+  @apply text-text_light/60;
 }
