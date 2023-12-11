@@ -35,12 +35,12 @@ html {
 .sp {
   @apply py-10 lg:py-20;
 }
-.tp{
+.t-margin{
   @apply mt-10
 }
 /* typography */
 .eq {
-  transition: 500ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 500ms cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 h1 {
   @apply text-5xl font-bold leading-[3.5rem];
@@ -53,5 +53,5 @@ h3 {
 }
 
 p {
-  @apply text-text_light/60;
+  @apply text-light/60;
 }

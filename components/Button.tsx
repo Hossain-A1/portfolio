@@ -9,7 +9,7 @@ export const buttonVariance= cva(
       variant: {
         dark: 'border-dark bg-dark text-white hover:border-dark-700/90 hover:bg-dark-700/80 ',
         outline:
-          'border-blue-900 bg-transparent text-text-light hover:bg-black/70 eq',
+          'border-blue-900 bg-transparent text-light hover:bg-blue/70 eq',
     
       },
       size: {

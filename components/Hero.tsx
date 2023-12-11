@@ -29,26 +29,26 @@ const Hero = () => {
               href='https://www.linkedin.com/feed/'
               className=' shadow-sm shadow-blue p-2 rounded-xl'
             >
-              <FaLinkedinIn className='text-2xl text-text_light' />
+              <FaLinkedinIn className='text-2xl text-light' />
             </Link>
             <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
-              <FaGithub className='text-2xl text-text_light' />
+              <FaGithub className='text-2xl text-light' />
             </Link>
 
             <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
-              <FaFacebookF className='text-2xl text-text_light' />
+              <FaFacebookF className='text-2xl text-light' />
             </Link>
             <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
-              <FaTwitter className='text-2xl text-text_light' />
+              <FaTwitter className='text-2xl text-light' />
             </Link>
           </div>
         </div>
       </div>
 
-      <div className='  flex justify-center items-center '>
-        <div className='h-[20rem] w-[20rem]'>
+      <div className='  flex justify-center items-center h-full w-full'>
+        <div className='h-[28rem] w-[28rem]'>
           <Image
-            src='/images/hero.jpeg'
+            src='/images/developer.png'
             alt='hero picture'
             height={720}
             width={1080}

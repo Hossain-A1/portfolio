@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={cn(bai_jamjuree.className, "bg-bg_dark text-text_light")}
+        className={cn(bai_jamjuree.className, "bg-dark text-light")}
       >
         <Navber />
         {children}

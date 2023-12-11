@@ -4,7 +4,7 @@ interface SectionTitleProps {
 }
 const SectionTitle: React.FC<SectionTitleProps> = ({ heading, subHeading }) => {
   return (
-    <div className="space-y-2">
+    <div className="flex flex-col  gap-2">
       <u className='text-text_light/40 tracking-[0.3rem] underline-offset-4 uppercase font-medium'>
         {heading}
       </u>
