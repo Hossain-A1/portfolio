@@ -3,7 +3,7 @@ import SectionTitle from "./ui/SectionTitle";
 
 const Contact = () => {
   return (
-    <section id='/contact-me' className=' wrapper sp  space-y-10'>
+    <section id='contact' className=' wrapper sp  space-y-10'>
       <SectionTitle heading='Contact' subHeading='Reach out to me' />
 
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-10'>

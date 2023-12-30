@@ -1,18 +1,26 @@
+"use client";
 import Link from "next/link";
 import SectionTitle from "./ui/SectionTitle";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { getTransition } from "./utils/getTransition";
 
 const Projects = () => {
   return (
     <main id='projects' className='wrapper sp'>
-      <div className='space-y-5'>
+      <motion.div className='space-y-5'>
         <SectionTitle
           heading='Projects'
           subHeading="Everything I've worked on is right here."
         />
 
-        <div className=' space-y-5'>
-          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
+        <div className=' space-y-10'>
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -58,35 +66,49 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-           <div className="flex gap-5 items-center">
-           <div className='h-[12rem] w-[15rem]'>
-              <Image
-                src='/images/project-1.png'
-                alt=''
-                height={600}
-                width={400}
-                priority
-                className='h-full w-full object-cover'
-              />
-            </div>
+            <div className='flex gap-5 items-center w-full h-full'>
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
 
-            <div className='h-[12rem] w-[15rem]'>
-              <Image
-                src='/images/project-1.png'
-                alt=''
-                height={600}
-                width={400}
-                priority
-                className='h-full w-full object-cover'
-              />
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
             </div>
-           </div>
-
-          </div>
+          </motion.div>
 
           {/* ------------- */}
 
-          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -133,19 +155,47 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='h-[20rem] w-[30rem]'>
-              <Image
-                src='/images/project-1.png'
-                alt=''
-                height={600}
-                width={400}
-                priority
-                className='h-full w-full object-cover'
-              />
+            <div className='flex gap-5 items-center w-full h-full'>
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
           {/* --------- */}
-          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -194,19 +244,47 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='h-[20rem] w-[30rem]'>
-              <Image
-                src='/images/project-1.png'
-                alt=''
-                height={600}
-                width={400}
-                priority
-                className='h-full w-full object-cover'
-              />
+            <div className='flex gap-5 items-center w-full h-full'>
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
           {/* --------- */}
-          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -252,19 +330,47 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='h-[20rem] w-[30rem]'>
-              <Image
-                src='/images/project-1.png'
-                alt=''
-                height={600}
-                width={400}
-                priority
-                className='h-full w-full object-cover'
-              />
+            <div className='flex gap-5 items-center w-full h-full'>
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
           {/* ----- */}
-          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -302,19 +408,42 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='h-[20rem] w-[30rem]'>
-              <Image
-                src='/images/project-1.png'
-                alt=''
-                height={600}
-                width={400}
-                priority
-                className='h-full w-full object-cover'
-              />
+            <div className='flex gap-5 items-center w-full h-full'>
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+
+              <motion.div
+                className='h-[12rem] w-[15rem]'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project-1.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 };

@@ -48,7 +48,7 @@ const Navber = () => {
               </Link>
             </li>
             <li className='text-right '>
-              <Link href='/#contact-me' className='text-light/40 '>
+              <Link href='/#contact' className='text-light/40 '>
                 Contact me
               </Link>
             </li>
