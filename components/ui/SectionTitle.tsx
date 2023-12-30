@@ -8,7 +8,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ heading, subHeading }) => {
       <u className='text-text_light/40 tracking-[0.3rem] underline-offset-4 uppercase font-medium'>
         {heading}
       </u>
-      <h2>{subHeading}</h2>
+      <h2 className="text-4xl font-semibold italic">{subHeading}</h2>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Projects = () => {
         />
 
         <div className=' space-y-5'>
-          <div className='flex max-lg:flex-col justify-between items-center gap-10'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -36,7 +36,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     back-end code
                   </strong>
                 </Link>
@@ -44,7 +44,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     front-end code
                   </strong>
                 </Link>
@@ -52,13 +52,14 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     live-site
                   </strong>
                 </Link>
               </div>
             </div>
-            <div className='h-[20rem] w-[30rem]'>
+           <div className="flex gap-5 items-center">
+           <div className='h-[12rem] w-[15rem]'>
               <Image
                 src='/images/project-1.png'
                 alt=''
@@ -68,11 +69,24 @@ const Projects = () => {
                 className='h-full w-full object-cover'
               />
             </div>
+
+            <div className='h-[12rem] w-[15rem]'>
+              <Image
+                src='/images/project-1.png'
+                alt=''
+                height={600}
+                width={400}
+                priority
+                className='h-full w-full object-cover'
+              />
+            </div>
+           </div>
+
           </div>
 
           {/* ------------- */}
 
-          <div className='flex max-lg:flex-col justify-between items-center gap-10'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -97,7 +111,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     back-end code
                   </strong>
                 </Link>
@@ -105,7 +119,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     front-end code
                   </strong>
                 </Link>
@@ -113,7 +127,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     live-site
                   </strong>
                 </Link>
@@ -131,7 +145,7 @@ const Projects = () => {
             </div>
           </div>
           {/* --------- */}
-          <div className='flex max-lg:flex-col justify-between items-center gap-10'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -158,7 +172,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/acquire/tree/main/prisma'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     back-end code
                   </strong>
                 </Link>
@@ -166,7 +180,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/acquire'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     front-end code
                   </strong>
                 </Link>
@@ -174,7 +188,7 @@ const Projects = () => {
                   href='https://acquire-7vwkhnhyl-hossain-a1.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     live-site
                   </strong>
                 </Link>
@@ -192,7 +206,7 @@ const Projects = () => {
             </div>
           </div>
           {/* --------- */}
-          <div className='flex max-lg:flex-col justify-between items-center gap-10'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -216,7 +230,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/closer-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     back-end code
                   </strong>
                 </Link>
@@ -224,7 +238,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/closer-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     front-end code
                   </strong>
                 </Link>
@@ -232,7 +246,7 @@ const Projects = () => {
                   href='/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     live-site
                   </strong>
                 </Link>
@@ -250,7 +264,7 @@ const Projects = () => {
             </div>
           </div>
           {/* ----- */}
-          <div className='flex max-lg:flex-col justify-between items-center gap-10'>
+          <div className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'>
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
@@ -274,15 +288,15 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/react-tech-alpha'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
-                    front-end code
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                    full-stack code
                   </strong>
                 </Link>
                 <Link
                   href='https://react-tech-alpha.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/50 uppercase font-medium text-xl '>
+                  <strong className='text-light/70 uppercase font-medium text-sm '>
                     live-site
                   </strong>
                 </Link>
