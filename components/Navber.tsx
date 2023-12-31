@@ -2,8 +2,9 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { HiCode } from "react-icons/hi";
-import { buttonVariance } from "./Button";
+import Button, { buttonVariance } from "./Button";
 import { useState } from "react";
+import { RESUME_LINK } from "./rusume/resume";
 const Navber = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -56,9 +57,9 @@ const Navber = () => {
         </div>
 
         <div className=' flex items-center gap-5 '>
-          <Link href='' className={cn(buttonVariance({ variant: "outline" }))}>
+          <Button href={RESUME_LINK} target="_blank" variant={"outline"}>
             Download Resume
-          </Link>
+          </Button>
           <span
             onClick={() => setOpenMenu(true)}
             className='max-lg:absolute max-lg:top-20 max-lg:right-10 cursor-pointer'

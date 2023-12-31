@@ -1,7 +1,40 @@
-import Button from "./Button";
+"use client";
+import { cn } from "@/lib/utils";
+import { buttonVariance } from "./Button";
 import SectionTitle from "./ui/SectionTitle";
+import emailJs from "@emailjs/browser";
+import toast from "react-hot-toast";
+import { HTMLAttributeReferrerPolicy, useRef } from "react";
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleContact = async (e: React.SyntheticEvent) => {
+    e.preventDefault();
+  
+    if (!formRef.current) {
+      return;
+    }
+  
+    try {
+      await emailJs.sendForm(
+        process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID as string,
+        formRef.current,
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID
+      );
+  
+      toast.success("Your message sent!");
+    } catch (error) {
+      console.error("Failed to send message:", error);
+      toast.error("Failed to send message!");
+    }
+  
+    // Reset form fields
+    formRef.current.reset();
+  };
+  
+
   return (
     <section id='contact' className=' wrapper sp  space-y-10'>
       <SectionTitle heading='Contact' subHeading='Reach out to me' />
@@ -39,34 +72,47 @@ const Contact = () => {
             </strong>
           </div>
         </div>
-        <div className='flex flex-col gap-5 w-full'>
+        <form
+          ref={formRef}
+          onSubmit={handleContact}
+          className='flex flex-col gap-5 w-full'
+        >
           <div>
             <input
+            required
+              name='name'
               type='text'
               placeholder='Your name'
-              className='px-6 py-3 rounded-xl outline-none border-2 text-dark focus:border-blue eq w-full'
+              className='name px-6 py-3 rounded-xl outline-none border-2 text-dark focus:border-blue eq w-full'
             />
           </div>
           <div>
             <input
+                 required
+              name='email'
               type='email'
               placeholder='Your email'
-              className='px-6 py-3 rounded-xl outline-none border-2 text-dark focus:border-blue eq w-full'
+              className='email px-6 py-3 rounded-xl outline-none border-2 text-dark focus:border-blue eq w-full'
             />
           </div>
           <div>
             <textarea
+                 required
+              name='message'
               rows={6}
               cols={30}
               placeholder='Your message here'
-              className='px-6 py-3 rounded-xl outline-none border-2 text-dark focus:border-blue eq w-full resize-none'
+              className='message px-6 py-3 rounded-xl outline-none border-2 text-dark focus:border-blue eq w-full resize-none'
             />
           </div>
 
-          <Button type='submit' variant='outline'>
+          <button
+            type='submit'
+            className={cn(buttonVariance({ variant: "outline" }))}
+          >
             Submit
-          </Button>
-        </div>
+          </button>
+        </form>
       </div>
     </section>
   );

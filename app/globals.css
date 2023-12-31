@@ -43,7 +43,7 @@ html {
   transition: 500ms cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 h1 {
-  @apply text-5xl font-bold leading-[3.5rem];
+  @apply text-6xl font-bold leading-[3.8rem] w-full tracking-wider ;
 }
 h2 {
   @apply text-2xl font-semibold;

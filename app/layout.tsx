@@ -3,6 +3,7 @@ import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 import Navber from "@/components/Navber";
 import { cn } from "@/lib/utils";
+import { Toaster } from "react-hot-toast";
 
 const bai_jamjuree = Bai_Jamjuree({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body
         className={cn(bai_jamjuree.className, "bg-dark text-light")}
       >
+        <Toaster/>
         <Navber />
         {children}
       </body>

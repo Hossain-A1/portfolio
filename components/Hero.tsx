@@ -7,27 +7,15 @@ import { motion } from "framer-motion";
 import { getTransition } from "./utils/getTransition";
 const Hero = () => {
   return (
-    <main className='wrapper sp  mt-20 h-[calc(100vh-5rem)]'>
+    <main className='wrapper sp  mt-10 h-auto'>
       <section className=' grid lg:grid-cols-2 grid-cols-1 gap-10  '>
-        <div className='flex flex-col  gap-5 items-center '>
-          <div className=' flex flex-col w-full  lg:w-[30rem]  gap-2  '>
-            <motion.h1
-              className=''
-              initial={{ x: "-120%" }}
-              whileInView={{ x: 0 }}
-              transition={getTransition(1)}
-            >
+        <div className='flex flex-col h-full w-full  items-center mt-10 '>
+          <div className=' flex flex-col w-full h-full  lg:w-[30rem]  gap-3  '>
+            <h1>
               Hi, I'm <strong className='text-blue-500'>Hossain Ahmed</strong> a{" "}
               <u className='text-blue'>Full-Stack</u> dev{" "}
-            </motion.h1>
-            <motion.h3
-              className=''
-              initial={{ y: "-200%" }}
-              whileInView={{ y: 0 }}
-              transition={getTransition(0.9)}
-            >
-              Transforming coding fervor into purposeful creations.
-            </motion.h3>
+            </h1>
+
             <motion.p
               initial={{ y: "-100%" }}
               whileInView={{ y: 0 }}
@@ -42,7 +30,7 @@ const Hero = () => {
 
           <motion.div
             className=' flex flex-col gap-2 '
-            initial={{ y: "100%" }}
+            initial={{ y: "-100%" }}
             whileInView={{ y: 0 }}
             transition={getTransition(1)}
           >
@@ -71,17 +59,18 @@ const Hero = () => {
 
         <motion.div
           className='  flex justify-center items-center h-full w-full'
-          initial={{ y: "-120%" }}
+          initial={{ y: "-115%" }}
           whileInView={{ y: 0 }}
           transition={getTransition(1)}
         >
-          <div className='h-[28rem] w-[28rem]'>
+          <div className='xl:h-[28rem] xl:w-[28rem] lg:h-[22rem] lg:w-[22rem]'>
             <Image
               src='/images/developer.png'
               alt='hero picture'
               height={720}
               width={1080}
               className='h-full w-full '
+              priority
             />
           </div>
         </motion.div>
