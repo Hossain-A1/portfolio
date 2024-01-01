@@ -1,18 +1,20 @@
 "use client";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { HiCode } from "react-icons/hi";
 import Button, { buttonVariance } from "./Button";
 import { useState } from "react";
-import { RESUME_LINK } from "./rusume/resume";
+import { RESUME_LINK } from "./resume/resume";
+import { CgClose, CgMenu } from "react-icons/cg";
+import { cn } from "@/lib/utils";
+
 const Navber = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState<boolean>(true);
   return (
-    <header className='fixed left-0 right-0 top-0 z-[999] bg-dark '>
-      <div className='flex justify-between items-center  h-20 wrapper relative'>
-        <div className='logo flex gap-2 items-center'>
+    <header className='fixed  left-0 right-0 top-0 z-[992] bg-dark '>
+      <div className='flex justify-between items-center   h-20 wrapper relative'>
+        <div className='logo flex gap-2 items-center max-lg:absolute max-lg:z-[999] left-5'>
           <span className=''>
-            <HiCode className='text-2xl text-blue font-bold' />
+            <HiCode className='text-2xl text-blue max-lg:text-light font-bold' />
           </span>
           <h2 className='font-medium tracking-wide text-xl'>
             Dev Hossain Ahmed
@@ -20,52 +22,105 @@ const Navber = () => {
         </div>
 
         <div
-          className={` ${
-            openMenu === false
-              ? " max-lg:hidden "
-              : "max-lg:absolute max-lg:h-[20rem] max-lg:w-1/2  max-lg:bottom-0 max-lg:right-10 max-lg:top-20 "
+          className={`${
+            openMenu
+              ? "max-lg:absolute max-lg:bg-blue z-[99] max-lg:left-0 max-lg:bottom-0 max-lg:top-0 max-lg:right-0 max-lg:min-h-screen visible block"
+              : " max-lg:hidden "
           }`}
         >
-          <ul className='lg:flex max-lg:flex-col max-lg:h-full gap-10 justify-between shadow-sm shadow-blue p-5 rounded-xl'>
-            <li className='max-lg:text-right max-lg:my-5'>
-              <Link href='/' className='text-light/40 '>
-                Home
-              </Link>
-            </li>
-            <li className='max-lg:text-right max-lg:my-5'>
-              <Link href='/#about' className='text-light/40 '>
-                About
-              </Link>
-            </li>
+          <div className='max-lg:relative max-lg:h-full max-lg:w-full'>
+            <ul
+              className='lg:flex max-lg:flex-col gap-10 items-center justify-center 
+            max-lg:absolute max-lg:bottom-0 max-lg:top-1/2 max-lg:-translate-y-1/2 max-lg:left-1/2 max-lg:-translate-x-1/2  '
+            >
+              <li className='max-lg:text-center max-lg:my-5'>
+                <Link
+                  href='/'
+                  className='text-light/40 hover:text-blue eq'
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className='max-lg:text-center max-lg:my-5'>
+                <Link
+                  href='/#about'
+                  className='text-light/40 hover:text-blue eq'
+                  onClick={() => setOpenMenu(false)}
+                >
+                  About
+                </Link>
+              </li>
 
-            <li className='max-lg:text-right max-lg:my-5'>
-              <Link href='/#projects' className='text-light/40 '>
-                Projects
-              </Link>
-            </li>
-            <li className='max-lg:text-right max-lg:my-5'>
-              <Link href='/#blog' className='text-light/40'>
-                Blog
-              </Link>
-            </li>
-            <li className='text-right '>
-              <Link href='/#contact' className='text-light/40 '>
-                Contact me
-              </Link>
-            </li>
-          </ul>
+              <li className='max-lg:text-center max-lg:my-5'>
+                <Link
+                  href='/#projects'
+                  className='text-light/40 hover:text-blue eq'
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li className='max-lg:text-center max-lg:my-5'>
+                <Link
+                  href='/#skills'
+                  className='text-light/40 hover:text-blue eq'
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className='max-lg:text-center max-lg:my-5'>
+                <Link
+                  href='/#blog'
+                  className='text-light/40 hover:text-blue eq'
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Blog
+                </Link>
+              </li>
+              <li className='max-lg:text-center max-lg:my-5 '>
+                <Link
+                  href='/#contact'
+                  className='text-light/40 hover:text-blue eq '
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Contact me
+                </Link>
+              </li>
+              <li className='list-none'>
+                <Link
+                  href={RESUME_LINK}
+                  target='_blank'
+                  className={cn(buttonVariance({ variant: "outline" }))}
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Download Resume
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className=' flex items-center gap-5 '>
-          <Button href={RESUME_LINK} target="_blank" variant={"outline"}>
-            Download Resume
-          </Button>
-          <span
-            onClick={() => setOpenMenu(true)}
-            className='max-lg:absolute max-lg:top-20 max-lg:right-10 cursor-pointer'
-          >
-            ✳️
-          </span>
+        <div
+          className={` ${
+            openMenu
+              ? "active"
+              : "absolute right-6 top-6 px-1 py-1 cursor-pointer border border-light rounded-full flex items-center justify-center"
+          }`}
+        >
+          <div className='mobile-navber-btn relative'>
+            <CgMenu
+              name='menu-outline'
+              className='mobile-navber-icon text-xl'
+              onClick={() => setOpenMenu(true)}
+            />
+            <CgClose
+              name='close-outline'
+              className='mobile-navber-icon close-outline text-xl'
+              onClick={() => setOpenMenu(false)}
+            />
+          </div>
         </div>
       </div>
     </header>

@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <main className='wrapper sp  mt-10 h-auto'>
       <section className=' grid lg:grid-cols-2 grid-cols-1 gap-10  '>
-        <div className='flex flex-col h-full w-full  items-center mt-10 '>
+        <div className='flex flex-col h-full w-full  items-center max-lg:text-center mt-10 '>
           <div className=' flex flex-col w-full h-full  lg:w-[30rem]  gap-3  '>
             <h1>
               Hi, I'm <strong className='text-blue-500'>Hossain Ahmed</strong> a{" "}

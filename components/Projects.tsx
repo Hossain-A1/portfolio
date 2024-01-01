@@ -44,7 +44,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     back-end code
                   </strong>
                 </Link>
@@ -52,7 +52,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center '>
                     front-end code
                   </strong>
                 </Link>
@@ -60,15 +60,15 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     live-site
                   </strong>
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 items-center w-full h-full'>
+            <div className='flex gap-5 justify-between items-center w-full h-full'>
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
@@ -84,7 +84,7 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
@@ -133,7 +133,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     back-end code
                   </strong>
                 </Link>
@@ -141,7 +141,7 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     front-end code
                   </strong>
                 </Link>
@@ -149,15 +149,15 @@ const Projects = () => {
                   href=''
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     live-site
                   </strong>
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 items-center w-full h-full'>
+            <div className='flex gap-5 justify-between items-center w-full h-full'>
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
@@ -173,7 +173,7 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
@@ -222,7 +222,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/acquire/tree/main/prisma'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     back-end code
                   </strong>
                 </Link>
@@ -230,7 +230,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/acquire'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     front-end code
                   </strong>
                 </Link>
@@ -238,15 +238,15 @@ const Projects = () => {
                   href='https://acquire-7vwkhnhyl-hossain-a1.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     live-site
                   </strong>
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 items-center w-full h-full'>
+            <div className='flex gap-5 justify-between items-center w-full h-full'>
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
@@ -262,7 +262,7 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
@@ -308,7 +308,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/closer-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     back-end code
                   </strong>
                 </Link>
@@ -316,7 +316,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/closer-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     front-end code
                   </strong>
                 </Link>
@@ -324,15 +324,15 @@ const Projects = () => {
                   href='/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     live-site
                   </strong>
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 items-center w-full h-full'>
+            <div className='flex gap-5 justify-between items-center w-full h-full'>
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
@@ -348,7 +348,7 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
@@ -394,7 +394,7 @@ const Projects = () => {
                   href='https://github.com/Hossain-A1/react-tech-alpha'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center '>
                     full-stack code
                   </strong>
                 </Link>
@@ -402,15 +402,15 @@ const Projects = () => {
                   href='https://react-tech-alpha.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm '>
+                  <strong className='text-light/70 uppercase font-medium text-sm  max-lg:text-xs text-center'>
                     live-site
                   </strong>
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 items-center w-full h-full'>
+            <div className='flex gap-5 justify-between items-center w-full h-full'>
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
@@ -426,7 +426,7 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[12rem] w-[15rem]'
+                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}

@@ -10,7 +10,7 @@ export const buttonVariance = cva(
       variant: {
         dark: "border-dark bg-dark text-white hover:border-dark-700/90 hover:bg-dark-700/80 ",
         outline:
-          "border-blue-900 bg-transparent text-light hover:bg-blue/70 eq",
+          "border-blue-900 bg-transparent max-lg:text-sm text-light hover:bg-blue/70 eq",
       },
       size: {
         auto: "w-auto",
@@ -24,25 +24,26 @@ export const buttonVariance = cva(
   }
 );
 
-interface ButtonProps extends VariantProps<typeof buttonVariance> {
+interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariance> {
   isLoading?: boolean;
-  href?: string;
-  children: React.ReactNode;
-  target?: string;
-  type:string
+  href:string,
+  
 }
-
 const Button: React.FC<ButtonProps> = ({
   variant,
   size,
   isLoading,
   children,
   href,
-  type
+  type,
+  
 }) => {
   return (
     <Link
-      href={{href}}
+  
+      href={ href }
       type={type}
       className={cn(
         buttonVariance({ variant, size }),

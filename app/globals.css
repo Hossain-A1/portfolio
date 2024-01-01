@@ -35,15 +35,15 @@ html {
 .sp {
   @apply py-10 lg:py-20;
 }
-.t-margin{
-  @apply mt-10
+.t-margin {
+  @apply mt-10;
 }
 /* typography */
 .eq {
   transition: 500ms cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 h1 {
-  @apply text-6xl font-bold leading-[3.8rem] w-full tracking-wider ;
+  @apply text-6xl font-bold leading-[3.8rem] w-full tracking-wider;
 }
 h2 {
   @apply text-2xl font-semibold;
@@ -54,4 +54,24 @@ h3 {
 
 p {
   @apply text-light/60;
+}
+
+.mobile-navber-btn {
+  @apply hidden bg-transparent cursor-pointer border-none max-lg:inline-block max-lg:z-[9999] max-lg:border;
+}
+
+.active .mobile-navber-icon {
+  @apply max-lg:hidden max-lg:text-xl max-lg:absolute 
+}
+
+.mobile-navber-icon[name="close-outline"] {
+  @apply hidden max-lg:text-xl max-lg:text-black ;
+}
+
+
+.close-outline {
+  @apply hidden text-xl;
+}
+.active .close-outline {
+  @apply max-lg:inline-block fixed top-8 right-6 border   text-light;
 }
