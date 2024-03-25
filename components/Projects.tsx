@@ -26,22 +26,22 @@ const Projects = () => {
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
                   1
                 </strong>
-                <h2 className='text-2xl font-semibold text-light/60'>
-                  SkyHawkForge
-                </h2>
+                <h2 className='text-2xl font-semibold text-light/60'>Altura</h2>
               </div>
               <div className='space-y-5'>
-                <p>It's a website dedicated to E-commerce for drones.</p>
+                <p>
+                  Altura Shoes' website offers premium footwear solutions
+                  blending style and performance for modern lifestyles.
+                </p>
 
                 <span className='text-blue block'>
-                  Node.js | Express.js | mongoDB | Next.js | Tailwind CSS |
-                  Stripe
+                  React.js | Node.js | Tailwind CSS | mongodb
                 </span>
               </div>
 
               <div className='flex gap-5'>
                 <Link
-                  href=''
+                  href='https://github.com/Hossain-A1/altura-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
                   <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
@@ -49,15 +49,15 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  href=''
+                  href='https://github.com/Hossain-A1/altura-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
-                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center '>
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
                     front-end code
                   </strong>
                 </Link>
                 <Link
-                  href=''
+                  href='https://altura-client-sdr3.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
                   <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
@@ -66,15 +66,15 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 justify-between items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
               <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
               >
                 <Image
-                  src='/images/project-1.png'
+                  src='/images/project1.png'
                   alt=''
                   height={600}
                   width={400}
@@ -84,13 +84,99 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
                 <Image
-                  src='/images/project-1.png'
+                  src='/images/project11.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+            </div>
+          </motion.div>
+          {/* ----- */}
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
+            <div className='space-y-5 '>
+              <div className='   flex  gap-5 items-center '>
+                <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
+                  2
+                </strong>
+                <h2 className='text-2xl font-semibold text-light/60'>
+                  SkyHawkForge
+                </h2>
+              </div>
+              <div className='space-y-5'>
+                <p>It's a website dedicated to E-commerce for drones.</p>
+
+                <span className='text-blue block'>
+                  Next.js | TypeScript | Node.js | Tailwind CSS | Stripe |
+                  mongodb
+                </span>
+              </div>
+
+              <div className='flex gap-5'>
+                <Link
+                  href='https://github.com/Hossain-A1/skyhewkforge-api'
+                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
+                >
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
+                    back-end code
+                  </strong>
+                </Link>
+                <Link
+                  href='https://github.com/Hossain-A1/skyhawkforge-client'
+                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
+                >
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center '>
+                    front-end code
+                  </strong>
+                </Link>
+                <Link
+                  href='https://skyhawkforge-client.vercel.app/'
+                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
+                >
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
+                    live-site
+                  </strong>
+                </Link>
+              </div>
+            </div>
+            <div className='flex gap-3 justify-between  max-md:flex-col items-center w-full h-full'>
+              <motion.div
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project-2.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+
+              <motion.div
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project22.png'
                   alt=''
                   height={600}
                   width={400}
@@ -112,7 +198,7 @@ const Projects = () => {
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
-                  2
+                  3
                 </strong>
                 <h2 className='text-2xl font-semibold text-light/60'>Arina.</h2>
               </div>
@@ -123,14 +209,14 @@ const Projects = () => {
                 </p>
 
                 <span className='text-blue block'>
-                  Node.js | Express.js | mongoDB | Next.js | Redux | clsx |
-                  Tailwind CSS | Stripe
+                  Node.js | Express.js | mongoDB | Next.js | TypeScript | Redux
+                  | Tailwind | Stripe
                 </span>
               </div>
 
               <div className='flex gap-5'>
                 <Link
-                  href=''
+                  href='https://github.com/Hossain-A1/arina-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
                   <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
@@ -138,7 +224,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  href=''
+                  href='https://github.com/Hossain-A1/arina-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
                   <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
@@ -146,7 +232,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  href=''
+                  href='https://arina-client.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
                   <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
@@ -155,15 +241,15 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 justify-between items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
               <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
               >
                 <Image
-                  src='/images/project-1.png'
+                  src='/images/project3.png'
                   alt=''
                   height={600}
                   width={400}
@@ -173,13 +259,13 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
                 <Image
-                  src='/images/project-1.png'
+                  src='/images/project33.png'
                   alt=''
                   height={600}
                   width={400}
@@ -199,21 +285,111 @@ const Projects = () => {
             <div className='space-y-5 '>
               <div className='   flex  gap-5 items-center '>
                 <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
-                  3
+                  4
                 </strong>
                 <h2 className='text-2xl font-semibold text-light/60'>
-                  Aquire.
+                  Nur-Store
                 </h2>
               </div>
               <div className='space-y-5'>
                 <p>
-                  Acquire serves as an online platform dedicated to selling
-                  courses.
+                  Nur-store is an e-commerce platform offering a diverse range
+                  of products catering to various needs, providing convenience
+                  and quality service to online shoppers.
                 </p>
 
                 <span className='text-blue block'>
-                  Prisma | mongoDB | Next.js | Next-auth | Axios | clsx |
-                  Tailwind CSS | Stripe
+                  Next.js | TypeScript | Node.js | SWR | Tailwind CSS | Stripe
+                </span>
+              </div>
+
+              <div className='flex gap-5'>
+                <Link
+                  href='https://github.com/Hossain-A1/store-server'
+                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
+                >
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
+                    back-end code
+                  </strong>
+                </Link>
+                <Link
+                  href='https://github.com/Hossain-A1/store-client'
+                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
+                >
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
+                    front-end code
+                  </strong>
+                </Link>
+                <Link
+                  href='https://store-client-five.vercel.app/'
+                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
+                >
+                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
+                    live-site
+                  </strong>
+                </Link>
+              </div>
+            </div>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
+              <motion.div
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
+                initial={{ y: "-100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.85)}
+              >
+                <Image
+                  src='/images/project4.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+
+              <motion.div
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={getTransition(0.9)}
+              >
+                <Image
+                  src='/images/project44.png'
+                  alt=''
+                  height={600}
+                  width={400}
+                  priority
+                  className='h-full w-full object-cover'
+                />
+              </motion.div>
+            </div>
+          </motion.div>
+          {/* --------- */}
+
+          <motion.div
+            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
+            initial={{ y: "-100%" }}
+            whileInView={{ y: 0 }}
+            transition={getTransition()}
+          >
+            <div className='space-y-5 '>
+              <div className='   flex  gap-5 items-center '>
+                <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
+                  5
+                </strong>
+                <h2 className='text-2xl font-semibold text-light/60'>
+                  Acquire
+                </h2>
+              </div>
+              <div className='space-y-5'>
+                <p>
+                  Acquire: Your premier destination for online courses,
+                  providing top-quality education to advance your skills and
+                  career conveniently from anywhere.
+                </p>
+
+                <span className='text-blue block'>
+                  Next.js | Prisma | Axios | Tailwind CSS | Stripe
                 </span>
               </div>
 
@@ -244,15 +420,15 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 justify-between items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
               <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.85)}
               >
                 <Image
-                  src='/images/project-1.png'
+                  src='/images/project5.png'
                   alt=''
                   height={600}
                   width={400}
@@ -262,177 +438,13 @@ const Projects = () => {
               </motion.div>
 
               <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
+                className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
                 <Image
-                  src='/images/project-1.png'
-                  alt=''
-                  height={600}
-                  width={400}
-                  priority
-                  className='h-full w-full object-cover'
-                />
-              </motion.div>
-            </div>
-          </motion.div>
-          {/* --------- */}
-          <motion.div
-            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
-            initial={{ y: "-100%" }}
-            whileInView={{ y: 0 }}
-            transition={getTransition()}
-          >
-            <div className='space-y-5 '>
-              <div className='   flex  gap-5 items-center '>
-                <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
-                  4
-                </strong>
-                <h2 className='text-2xl font-semibold text-light/60'>Closer</h2>
-              </div>
-              <div className='space-y-5'>
-                <p>
-                  Effortlessly streamline project management tasks, ensuring
-                  optimal workflow coordination and success.
-                </p>
-
-                <span className='text-blue block'>
-                  Express.js | mongoDB | React.js | Moment.js | Tailwind CSS
-                </span>
-              </div>
-
-              <div className='flex gap-5'>
-                <Link
-                  href='https://github.com/Hossain-A1/closer-server'
-                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
-                >
-                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
-                    back-end code
-                  </strong>
-                </Link>
-                <Link
-                  href='https://github.com/Hossain-A1/closer-client'
-                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
-                >
-                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
-                    front-end code
-                  </strong>
-                </Link>
-                <Link
-                  href='/'
-                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
-                >
-                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center'>
-                    live-site
-                  </strong>
-                </Link>
-              </div>
-            </div>
-            <div className='flex gap-5 justify-between items-center w-full h-full'>
-              <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
-                initial={{ y: "-100%" }}
-                whileInView={{ y: 0 }}
-                transition={getTransition(0.85)}
-              >
-                <Image
-                  src='/images/project-1.png'
-                  alt=''
-                  height={600}
-                  width={400}
-                  priority
-                  className='h-full w-full object-cover'
-                />
-              </motion.div>
-
-              <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
-                initial={{ y: "100%" }}
-                whileInView={{ y: 0 }}
-                transition={getTransition(0.9)}
-              >
-                <Image
-                  src='/images/project-1.png'
-                  alt=''
-                  height={600}
-                  width={400}
-                  priority
-                  className='h-full w-full object-cover'
-                />
-              </motion.div>
-            </div>
-          </motion.div>
-          {/* ----- */}
-          <motion.div
-            className='grid lg:grid-cols-2 grid-cols-1 items-center gap-10'
-            initial={{ y: "-100%" }}
-            whileInView={{ y: 0 }}
-            transition={getTransition()}
-          >
-            <div className='space-y-5 '>
-              <div className='   flex  gap-5 items-center '>
-                <strong className=' w-12 h-12 rounded-full text-center bg-blue text-light text-4xl flex items-center justify-center'>
-                  5
-                </strong>
-                <h2 className='text-2xl font-semibold text-light/60'>gobuy</h2>
-              </div>
-              <div className='space-y-5'>
-                <p>
-                  Gobuy operates as an online platform specializing in the sale
-                  of electronic products.
-                </p>
-
-                <span className='text-blue block'>
-                  React.js | Redux | Reduxjs/toolkit | axios | Tailwind CSS
-                </span>
-              </div>
-
-              <div className='flex gap-5'>
-                <Link
-                  href='https://github.com/Hossain-A1/react-tech-alpha'
-                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
-                >
-                  <strong className='text-light/70 uppercase font-medium text-sm max-lg:text-xs text-center '>
-                    full-stack code
-                  </strong>
-                </Link>
-                <Link
-                  href='https://react-tech-alpha.vercel.app/'
-                  className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
-                >
-                  <strong className='text-light/70 uppercase font-medium text-sm  max-lg:text-xs text-center'>
-                    live-site
-                  </strong>
-                </Link>
-              </div>
-            </div>
-            <div className='flex gap-5 justify-between items-center w-full h-full'>
-              <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
-                initial={{ y: "-100%" }}
-                whileInView={{ y: 0 }}
-                transition={getTransition(0.85)}
-              >
-                <Image
-                  src='/images/project-1.png'
-                  alt=''
-                  height={600}
-                  width={400}
-                  priority
-                  className='h-full w-full object-cover'
-                />
-              </motion.div>
-
-              <motion.div
-                className='h-[13rem] xl:w-[20rem] lg:w-[15rem] w-full'
-                initial={{ y: "100%" }}
-                whileInView={{ y: 0 }}
-                transition={getTransition(0.9)}
-              >
-                <Image
-                  src='/images/project-1.png'
+                  src='/images/project55.png'
                   alt=''
                   height={600}
                   width={400}

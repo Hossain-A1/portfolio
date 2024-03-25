@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { HiCode } from "react-icons/hi";
-import Button, { buttonVariance } from "./Button";
+import { buttonVariance } from "./Button";
 import { useState } from "react";
 import { RESUME_LINK } from "./resume/resume";
 import { CgClose, CgMenu } from "react-icons/cg";
@@ -24,8 +24,8 @@ const Navber = () => {
         <div
           className={`${
             openMenu
-              ? "max-lg:absolute max-lg:bg-blue z-[99] max-lg:left-0 max-lg:bottom-0 max-lg:top-0 max-lg:right-0 max-lg:min-h-screen visible block"
-              : " max-lg:hidden "
+              ? " max-lg:hidden "
+              : "max-lg:absolute max-lg:bg-blue z-[99] max-lg:left-0 max-lg:bottom-0 max-lg:top-0 max-lg:right-0 max-lg:min-h-screen visible block"
           }`}
         >
           <div className='max-lg:relative max-lg:h-full max-lg:w-full'>
@@ -36,8 +36,8 @@ const Navber = () => {
               <li className='max-lg:text-center max-lg:my-5'>
                 <Link
                   href='/'
-                  className='text-light/40 hover:text-blue eq'
-                  onClick={() => setOpenMenu(false)}
+                  className='text-light/40 hover:text-light eq'
+                  onClick={() => setOpenMenu(true)}
                 >
                   Home
                 </Link>
@@ -45,8 +45,8 @@ const Navber = () => {
               <li className='max-lg:text-center max-lg:my-5'>
                 <Link
                   href='/#about'
-                  className='text-light/40 hover:text-blue eq'
-                  onClick={() => setOpenMenu(false)}
+                  className='text-light/40 hover:text-light eq'
+                  onClick={() => setOpenMenu(true)}
                 >
                   About
                 </Link>
@@ -55,8 +55,8 @@ const Navber = () => {
               <li className='max-lg:text-center max-lg:my-5'>
                 <Link
                   href='/#projects'
-                  className='text-light/40 hover:text-blue eq'
-                  onClick={() => setOpenMenu(false)}
+                  className='text-light/40 hover:text-light eq'
+                  onClick={() => setOpenMenu(true)}
                 >
                   Projects
                 </Link>
@@ -64,8 +64,8 @@ const Navber = () => {
               <li className='max-lg:text-center max-lg:my-5'>
                 <Link
                   href='/#skills'
-                  className='text-light/40 hover:text-blue eq'
-                  onClick={() => setOpenMenu(false)}
+                  className='text-light/40 hover:text-light eq'
+                  onClick={() => setOpenMenu(true)}
                 >
                   Skills
                 </Link>
@@ -73,8 +73,8 @@ const Navber = () => {
               <li className='max-lg:text-center max-lg:my-5'>
                 <Link
                   href='/#blog'
-                  className='text-light/40 hover:text-blue eq'
-                  onClick={() => setOpenMenu(false)}
+                  className='text-light/40 hover:text-light eq'
+                  onClick={() => setOpenMenu(true)}
                 >
                   Blog
                 </Link>
@@ -82,8 +82,8 @@ const Navber = () => {
               <li className='max-lg:text-center max-lg:my-5 '>
                 <Link
                   href='/#contact'
-                  className='text-light/40 hover:text-blue eq '
-                  onClick={() => setOpenMenu(false)}
+                  className='text-light/40 hover:text-light eq '
+                  onClick={() => setOpenMenu(true)}
                 >
                   Contact me
                 </Link>
@@ -93,7 +93,7 @@ const Navber = () => {
                   href={RESUME_LINK}
                   target='_blank'
                   className={cn(buttonVariance({ variant: "outline" }))}
-                  onClick={() => setOpenMenu(false)}
+                  onClick={() => setOpenMenu(true)}
                 >
                   Download Resume
                 </Link>
@@ -105,20 +105,20 @@ const Navber = () => {
         <div
           className={` ${
             openMenu
-              ? "active"
-              : "absolute right-6 top-6 px-1 py-1 cursor-pointer border border-light rounded-full flex items-center justify-center"
+              ? "absolute  right-6 top-6 px-1 py-1 cursor-pointer border border-light rounded-full lg:hidden flex items-center justify-center"
+              : "active"
           }`}
         >
           <div className='mobile-navber-btn relative'>
             <CgMenu
               name='menu-outline'
               className='mobile-navber-icon text-xl'
-              onClick={() => setOpenMenu(true)}
+              onClick={() => setOpenMenu(false)}
             />
             <CgClose
               name='close-outline'
-              className='mobile-navber-icon close-outline text-xl'
-              onClick={() => setOpenMenu(false)}
+              className='mobile-navber-icon close-outline '
+              onClick={() => setOpenMenu(true)}
             />
           </div>
         </div>

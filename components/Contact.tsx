@@ -4,7 +4,7 @@ import { buttonVariance } from "./Button";
 import SectionTitle from "./ui/SectionTitle";
 import emailJs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import { HTMLAttributeReferrerPolicy, useRef } from "react";
+import {  useRef } from "react";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);

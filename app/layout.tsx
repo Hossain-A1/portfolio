@@ -22,11 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body
-        className={cn(bai_jamjuree.className, "bg-dark text-light")}
-      >
-        <Toaster/>
+      <body className={cn(bai_jamjuree.className, "bg-dark   text-light")}>
+        <Toaster />
         <Navber />
+
         {children}
       </body>
     </html>

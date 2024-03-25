@@ -2,8 +2,8 @@ import SectionTitle from "./ui/SectionTitle";
 
 const AboutPage = () => {
   return (
-    <section id='about' className=''>
-      <div className=' wrapper sp grid lg:grid-cols-2 grid-cols-1 gap-10'>
+    <section id='about' className='wrapper t-margin sp'>
+      <div className='  grid lg:grid-cols-2 grid-cols-1 gap-10'>
         <div className='pic'>
           <SectionTitle
             heading='About'

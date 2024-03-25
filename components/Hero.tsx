@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 import { getTransition } from "./utils/getTransition";
 const Hero = () => {
   return (
-    <main className='wrapper sp  mt-10 h-auto'>
+    <main className='wrapper sp t-margin h-auto'>
       <section className=' grid lg:grid-cols-2 grid-cols-1 gap-10  '>
         <div className='flex flex-col h-full w-full  items-center max-lg:text-center mt-10 '>
-          <div className=' flex flex-col w-full h-full  lg:w-[30rem]  gap-3  '>
+          <div className=' flex flex-col w-full h-full items-center  lg:w-[30rem]  gap-3  '>
             <h1>
               Hi, I'm <strong className='text-blue-500'>Hossain Ahmed</strong> a{" "}
               <u className='text-blue'>Full-Stack</u> dev{" "}
@@ -38,19 +38,32 @@ const Hero = () => {
 
             <div className='flex gap-10 items-center'>
               <Link
+                target='_blank'
                 href='https://www.linkedin.com/feed/'
                 className=' shadow-sm shadow-blue p-2 rounded-xl'
               >
                 <FaLinkedinIn className='text-2xl text-light' />
               </Link>
-              <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
+              <Link
+                href='https://github.com/Hossain-A1'
+                target='_blank'
+                className=' shadow-sm shadow-blue p-2 rounded-xl'
+              >
                 <FaGithub className='text-2xl text-light' />
               </Link>
 
-              <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
+              <Link
+                href='https://www.facebook.com/hossainislam.nur.9/'
+                target='_blank'
+                className=' shadow-sm shadow-blue p-2 rounded-xl'
+              >
                 <FaFacebookF className='text-2xl text-light' />
               </Link>
-              <Link href='' className=' shadow-sm shadow-blue p-2 rounded-xl'>
+              <Link
+                href='https://twitter.com/Hossain08343121'
+                target='_blank'
+                className=' shadow-sm shadow-blue p-2 rounded-xl'
+              >
                 <FaTwitter className='text-2xl text-light' />
               </Link>
             </div>

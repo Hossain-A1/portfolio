@@ -7,7 +7,7 @@ import { data } from "./data/skills";
 
 const Skills = () => {
   return (
-    <section id='skills' className='wrapper sp '>
+    <section id='skills' className='wrapper sp t-margin'>
      <div className="space-y-10">
      <SectionTitle subHeading='Highlighted Skills' heading='Skills' />
 
