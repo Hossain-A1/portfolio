@@ -1,9 +1,9 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import { getTransition } from "./utils/getTransition";
 
 interface BlogCardProps {
   index: number;
@@ -28,7 +28,12 @@ const BlogCard: React.FC<BlogCardProps> = ({
 }) => {
   return (
     <div className='h-full w-full overflow-hidden'>
-      <article className='h-full w-full overflow-hidden rounded-xl border border-dark/10 bg-light'>
+      <motion.article
+        className='h-full w-full overflow-hidden rounded-xl border border-dark/10 bg-light'
+        initial={{ y: "-100%" }}
+        whileInView={{ y: 0 }}
+        transition={getTransition(index / 10)}
+      >
         <div className='h-[10rem] w-full overflow-hidden sm:h-[15rem]'>
           <Image
             src={image}
@@ -61,7 +66,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
             Read Full Article
           </Button>
         </div>
-      </article>
+      </motion.article>
     </div>
   );
 };
