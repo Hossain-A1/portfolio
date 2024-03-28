@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import { HiCode } from "react-icons/hi";
-import { buttonVariance } from "./Button";
 import { useState } from "react";
 import { RESUME_LINK } from "./resume/resume";
 import { CgClose, CgMenu } from "react-icons/cg";
 import { cn } from "@/lib/utils";
+import Button from "./Button";
 
 const Navber = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(true);
@@ -25,7 +25,7 @@ const Navber = () => {
           className={`${
             openMenu
               ? " max-lg:hidden "
-              : "max-lg:absolute max-lg:bg-blue z-[99] max-lg:left-0 max-lg:bottom-0 max-lg:top-0 max-lg:right-0 max-lg:min-h-screen visible block"
+              : "max-lg:absolute max-lg:bg-dark z-[99] max-lg:left-0 max-lg:bottom-0 max-lg:top-0 max-lg:right-0 max-lg:min-h-screen visible block"
           }`}
         >
           <div className='max-lg:relative max-lg:h-full max-lg:w-full'>
@@ -89,14 +89,14 @@ const Navber = () => {
                 </Link>
               </li>
               <li className='list-none'>
-                <Link
+                <Button
                   href={RESUME_LINK}
                   target='_blank'
-                  className={cn(buttonVariance({ variant: "outline" }))}
+               
                   onClick={() => setOpenMenu(true)}
                 >
                   Download Resume
-                </Link>
+                </Button>
               </li>
             </ul>
           </div>
@@ -105,7 +105,7 @@ const Navber = () => {
         <div
           className={` ${
             openMenu
-              ? "absolute  right-6 top-6 px-1 py-1 cursor-pointer border border-light rounded-full lg:hidden flex items-center justify-center"
+              ? "absolute  right-6 top-6 px-1 py-1 cursor-pointer   bg-light/10 lg:hidden flex items-center justify-center"
               : "active"
           }`}
         >
@@ -117,7 +117,7 @@ const Navber = () => {
             />
             <CgClose
               name='close-outline'
-              className='mobile-navber-icon close-outline '
+              className='mobile-navber-icon close-outline text-xl'
               onClick={() => setOpenMenu(true)}
             />
           </div>

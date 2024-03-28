@@ -1,21 +1,20 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { buttonVariance } from "./Button";
 import SectionTitle from "./ui/SectionTitle";
 import emailJs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import {  useRef } from "react";
+import { useRef } from "react";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleContact = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-  
+
     if (!formRef.current) {
       return;
     }
-  
+
     try {
       await emailJs.sendForm(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID as string,
@@ -23,17 +22,16 @@ const Contact = () => {
         formRef.current,
         process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_ID
       );
-  
+
       toast.success("Your message sent!");
     } catch (error) {
       console.error("Failed to send message:", error);
       toast.error("Failed to send message!");
     }
-  
+
     // Reset form fields
     formRef.current.reset();
   };
-  
 
   return (
     <section id='contact' className=' wrapper sp  space-y-10'>
@@ -79,7 +77,7 @@ const Contact = () => {
         >
           <div>
             <input
-            required
+              required
               name='name'
               type='text'
               placeholder='Your name'
@@ -88,7 +86,7 @@ const Contact = () => {
           </div>
           <div>
             <input
-                 required
+              required
               name='email'
               type='email'
               placeholder='Your email'
@@ -97,7 +95,7 @@ const Contact = () => {
           </div>
           <div>
             <textarea
-                 required
+              required
               name='message'
               rows={6}
               cols={30}
@@ -106,12 +104,7 @@ const Contact = () => {
             />
           </div>
 
-          <button
-            type='submit'
-            className={cn(buttonVariance({ variant: "outline" }))}
-          >
-            Submit
-          </button>
+          <button type='submit'>Submit</button>
         </form>
       </div>
     </section>

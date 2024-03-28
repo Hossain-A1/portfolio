@@ -4,6 +4,7 @@ import "./globals.css";
 import Navber from "@/components/Navber";
 import { cn } from "@/lib/utils";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/Footer";
 
 const bai_jamjuree = Bai_Jamjuree({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Navber />
 
         {children}
+        <Footer/>
       </body>
     </html>
   );

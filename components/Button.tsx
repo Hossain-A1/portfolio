@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import { cva, VariantProps } from "class-variance-authority";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+import clsx from "clsx";
 
-export const buttonVariance = cva(
+export const buttonVariants = cva(
   "inline-block text-center px-6 py-3 rounded-lg border font-medium active:scale-105 eq",
 
   {
@@ -25,31 +25,26 @@ export const buttonVariance = cva(
   }
 );
 
-interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariance> {
-  isLoading?: boolean;
-  href:string,
-  
+interface ButtonProps extends VariantProps<typeof buttonVariants> {
+  href: string;
+  target?: string;
+  children: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLElement>;
 }
+
 const Button: React.FC<ButtonProps> = ({
-  variant,
-  size,
-  isLoading,
-  children,
   href,
-  type,
-  
+  target,
+  variant,
+  children,
+  onClick,
 }) => {
   return (
     <Link
-  
-      href={ href }
-      type={type}
-      className={cn(
-        buttonVariance({ variant, size }),
-        isLoading && "flex items-center justify-center gap-2.5"
-      )}
+      href={href}
+      target={target}
+      onClick={onClick}
+      className={clsx(buttonVariants({ variant }))}
     >
       {children}
     </Link>

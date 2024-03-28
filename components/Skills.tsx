@@ -3,7 +3,7 @@
 import SectionTitle from "./ui/SectionTitle";
 import { motion } from 'framer-motion';
 import { getTransition } from "./utils/getTransition";
-import { data } from "./data/skills";
+import { data } from "../data/skills";
 
 const Skills = () => {
   return (

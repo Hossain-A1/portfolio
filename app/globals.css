@@ -73,5 +73,5 @@ p {
   @apply hidden text-xl;
 }
 .active .close-outline {
-  @apply max-lg:inline-block fixed top-8 right-6 border   text-light;
+  @apply max-lg:inline-block fixed top-7 right-7  text-xl eq  bg-light/10  text-light;
 }
