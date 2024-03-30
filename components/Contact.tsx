@@ -81,19 +81,19 @@ const Contact = () => {
                 Social Media
               </h3>
               <div className='flex flex-wrap gap-x-5 gap-y-1.5'>
-                <Link href='https://github.com/shohan-pherones' target='_blank'>
+                <Link href='https://github.com/Hossain-A1' target='_blank'>
                   GitHub
                 </Link>
-                <Link href='https://leetcode.com/spectrashohan' target='_blank'>
+                <Link href='https://leetcode.com/hossainA7/' target='_blank'>
                   LeetCode
                 </Link>
                 <Link
-                  href='https://www.linkedin.com/in/shohan-pherones'
+                  href='https://www.linkedin.com/in/hossain-ahmed-163b11236/'
                   target='_blank'
                 >
                   LinkedIn
                 </Link>
-                <Link href='https://twitter.com/elysianshohan' target='_blank'>
+                <Link href='https://twitter.com/Hossain08343121' target='_blank'>
                   Twitter
                 </Link>
                 <Link
@@ -116,7 +116,7 @@ const Contact = () => {
                   Your email beckons for your swift attention!
                 </h3>
                 <Link
-                  href='mailto:shohan.sub.56@gmail.com'
+                  href='https://mail.google.com/'
                   target='_blank'
                   className='link-item-dark'
                 >

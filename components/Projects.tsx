@@ -41,8 +41,7 @@ const Projects = () => {
 
               <div className='flex gap-5'>
                 <Link
-                target="_blank"
-                
+                  target='_blank'
                   href='https://github.com/Hossain-A1/altura-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -51,7 +50,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://github.com/Hossain-A1/altura-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -60,7 +59,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://altura-client-sdr3.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -70,7 +69,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full overflow-hidden'>
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
@@ -89,7 +88,7 @@ const Projects = () => {
 
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
-                initial={{ y: "100%" }}
+                initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
@@ -130,8 +129,8 @@ const Projects = () => {
               </div>
 
               <div className='flex gap-5'>
-                <Link 
-                  target="_blank"
+                <Link
+                  target='_blank'
                   href='https://github.com/Hossain-A1/skyhewkforge-api'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -139,8 +138,8 @@ const Projects = () => {
                     back-end code
                   </strong>
                 </Link>
-                <Link 
-                  target="_blank"
+                <Link
+                  target='_blank'
                   href='https://github.com/Hossain-A1/skyhawkforge-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -148,8 +147,8 @@ const Projects = () => {
                     front-end code
                   </strong>
                 </Link>
-                <Link 
-                  target="_blank"
+                <Link
+                  target='_blank'
                   href='https://skyhawkforge-client.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -159,7 +158,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-3 justify-between  max-md:flex-col items-center w-full h-full'>
+            <div className='flex gap-3 justify-between  max-md:flex-col items-center w-full h-full overflow-hidden'>
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
@@ -178,7 +177,7 @@ const Projects = () => {
 
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
-                initial={{ y: "100%" }}
+                initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
@@ -222,8 +221,8 @@ const Projects = () => {
               </div>
 
               <div className='flex gap-5'>
-                <Link 
-                  target="_blank"
+                <Link
+                  target='_blank'
                   href='https://github.com/Hossain-A1/arina-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -231,8 +230,8 @@ const Projects = () => {
                     back-end code
                   </strong>
                 </Link>
-                <Link 
-                  target="_blank"
+                <Link
+                  target='_blank'
                   href='https://github.com/Hossain-A1/arina-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -240,8 +239,8 @@ const Projects = () => {
                     front-end code
                   </strong>
                 </Link>
-                <Link 
-                  target="_blank"
+                <Link
+                  target='_blank'
                   href='https://arina-client.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -251,7 +250,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full overflow-hidden'>
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
@@ -270,7 +269,7 @@ const Projects = () => {
 
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
-                initial={{ y: "100%" }}
+                initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
@@ -315,7 +314,7 @@ const Projects = () => {
 
               <div className='flex gap-5'>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://github.com/Hossain-A1/store-server'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -324,7 +323,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://github.com/Hossain-A1/store-client'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -333,7 +332,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://store-client-five.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -343,7 +342,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full overflow-hidden'>
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
@@ -362,7 +361,7 @@ const Projects = () => {
 
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
-                initial={{ y: "100%" }}
+                initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
@@ -408,7 +407,7 @@ const Projects = () => {
 
               <div className='flex gap-5'>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://github.com/Hossain-A1/acquire/tree/main/prisma'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -417,7 +416,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://github.com/Hossain-A1/acquire'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -426,7 +425,7 @@ const Projects = () => {
                   </strong>
                 </Link>
                 <Link
-                  target="_blank"
+                  target='_blank'
                   href='https://acquire-7vwkhnhyl-hossain-a1.vercel.app/'
                   className='border border-blue py-2 px-4 rounded-full  hover:bg-blue eq '
                 >
@@ -436,7 +435,7 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full'>
+            <div className='flex gap-3 justify-between max-md:flex-col items-center w-full h-full overflow-hidden'>
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
                 initial={{ y: "-100%" }}
@@ -455,7 +454,7 @@ const Projects = () => {
 
               <motion.div
                 className='h-[13rem] xl:w-[20rem] lg:w-[18rem] w-full'
-                initial={{ y: "100%" }}
+                initial={{ y: "-100%" }}
                 whileInView={{ y: 0 }}
                 transition={getTransition(0.9)}
               >
