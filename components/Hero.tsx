@@ -22,7 +22,7 @@ const Hero = () => {
               transition={getTransition()}
             >
               {`Hello and thank you for visiting my portfolio! I'm on a mission to
-              showcase my passion for developing websites that excel in both
+              showcase my passion for developing websites that excel in bothgit 
               delivering the best user experience and demonstrating technical
               prowess.`}
             </motion.p>
