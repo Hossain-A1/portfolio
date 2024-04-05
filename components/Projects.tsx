@@ -30,8 +30,8 @@ const Projects = () => {
               </div>
               <div className='space-y-5'>
                 <p>
-                  Altura Shoes' website offers premium footwear solutions
-                  blending style and performance for modern lifestyles.
+                  {` Altura Shoes' website offers premium footwear solutions
+                  blending style and performance for modern lifestyles.`}
                 </p>
 
                 <span className='text-blue block'>
@@ -120,7 +120,7 @@ const Projects = () => {
                 </h2>
               </div>
               <div className='space-y-5'>
-                <p>It's a website dedicated to E-commerce for drones.</p>
+                <p>{`It's a website dedicated to E-commerce for drones.`}</p>
 
                 <span className='text-blue block'>
                   Next.js | TypeScript | Node.js | Tailwind CSS | Stripe |

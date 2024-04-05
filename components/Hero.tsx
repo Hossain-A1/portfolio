@@ -12,8 +12,8 @@ const Hero = () => {
         <div className='flex flex-col h-full w-full  items-center max-lg:text-center mt-10 '>
           <div className=' flex flex-col w-full h-full items-center  lg:w-[30rem]  gap-5  overflow-hidden'>
             <h1>
-              Hi, I'm <strong className='text-blue-500'>Hossain Ahmed</strong> a{" "}
-              <u className='text-blue'>Full-Stack</u> dev{" "}
+              {` Hi, I'm <strong className='text-blue-500'>Hossain Ahmed</strong> a
+              <u className='text-blue'>Full-Stack</u> dev`}
             </h1>
 
             <motion.p
@@ -21,10 +21,10 @@ const Hero = () => {
               whileInView={{ y: 0 }}
               transition={getTransition()}
             >
-              Hello and thank you for visiting my portfolio! I'm on a mission to
+              {`Hello and thank you for visiting my portfolio! I'm on a mission to
               showcase my passion for developing websites that excel in both
               delivering the best user experience and demonstrating technical
-              prowess.
+              prowess.`}
             </motion.p>
           </div>
 

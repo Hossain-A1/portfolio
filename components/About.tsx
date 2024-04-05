@@ -26,17 +26,17 @@ const AboutPage = () => {
           <div className='space-y-5'>
             <div>
               <p>
-                Hey there, I'm Hossain Ahmed—a passionate full-stack web
+                {`  Hey there, I'm Hossain Ahmed—a passionate full-stack web
                 developer deeply engaged in the MERN stack. My proficiency spans
                 Next.js, React.js, TypeScript, Node.js, Express.js, and Tailwind
                 CSS, as evidenced by the diverse range of projects I've
-                undertaken.
+                undertaken.`}
               </p>
             </div>
 
             <div className=''>
               <p>
-                My venture into the realm of web development commenced in June
+                {` My venture into the realm of web development commenced in June
                 2022, marking the inception of an exciting and transformative
                 journey. From the outset, my passion for JavaScript has been a
                 driving force, compelling me to delve into its nuances with
@@ -45,18 +45,18 @@ const AboutPage = () => {
                 experiences, exploring the multifaceted aspects of this
                 versatile programming language. This dynamic pursuit not only
                 fuels my knowledge but also propels me to stay abreast of the
-                ever-evolving landscape of web development.
+                ever-evolving landscape of web development.`}
               </p>
             </div>
 
             <div>
               <p>
-                In a nutshell, I'm a motivated web developer who's always
+                {`In a nutshell, I'm a motivated web developer who's always
                 looking for chances to learn and come up with new solutions. I
                 have a solid background in MERN stack development, love working
                 with JavaScript, and am committed to delivering top-notch
                 results. I'm excited to use my skills in meaningful projects and
-                work with others who share my passion.
+                work with others who share my passion.`}
               </p>
             </div>
           </div>
