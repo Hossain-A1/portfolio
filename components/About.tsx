@@ -1,17 +1,28 @@
+import Image from "next/image";
 import SectionTitle from "./ui/SectionTitle";
 
 const AboutPage = () => {
   return (
     <section id='about' className='wrapper t-margin sp'>
       <div className='  grid lg:grid-cols-2 grid-cols-1 gap-10'>
-        <div className='pic'>
+        <div className='pic space-y-5'>
           <SectionTitle
             heading='About'
             subHeading='Unmasking My Journey and Essence'
           />
+          <div className='lg:h-[35rem] lg:w-[35rem] hover:scale-110 eq  flex justify-center items-center '>
+            <Image
+              src='/images/about-1.jpg'
+              alt='hossain'
+              priority
+              height='720'
+              width='1280'
+              className='h-full w-full object-fill'
+            />
+          </div>
         </div>
 
-        <div className='ditails '>
+        <div className='ditails lg:mt-20 '>
           <div className='space-y-5'>
             <div>
               <p>
@@ -23,7 +34,7 @@ const AboutPage = () => {
               </p>
             </div>
 
-            <div className='max-md:hidden'>
+            <div className=''>
               <p>
                 My venture into the realm of web development commenced in June
                 2022, marking the inception of an exciting and transformative
